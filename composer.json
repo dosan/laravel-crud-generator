@@ -15,13 +15,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Ibex\\CrudGenerator\\": "src/"
+            "Dosan\\CrudGenerator\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Ibex\\CrudGenerator\\CrudServiceProvider"
+                "Dosan\\CrudGenerator\\CrudServiceProvider"
             ]
         }
     },
