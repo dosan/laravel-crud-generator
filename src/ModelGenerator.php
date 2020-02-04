@@ -1,6 +1,6 @@
 <?php
 
-namespace Ibex\CrudGenerator;
+namespace Dosan\CrudGenerator;
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
