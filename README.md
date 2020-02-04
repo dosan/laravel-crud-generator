@@ -18,7 +18,7 @@ This Laravel Generator package provides and generate Controller, Model (with elo
 ## Installation
 1 - Install
 ```
-composer require ibex/crud-generator --dev
+composer require dosan/crud-generator --dev
 ```
 2- Publish the default package's config
 ```
@@ -62,10 +62,3 @@ php artisan make:crud {table_name} --route={route_name}
 ![Form](https://i.imgur.com/poRiZRO.png)
 
 
-## Author
-
-M Awais // [Email Me](mailto:asargodha@gmail.com)
-
-[Buy me a Coffee](https://ko-fi.com/C0C8VT1M)
-
-[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/C0C8VT1M)
