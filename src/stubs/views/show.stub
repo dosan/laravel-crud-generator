@@ -3,7 +3,7 @@
     $title  = ${{modelNameLowerCase}}->name ?? 'Show {{modelTitle}}'
 @endphp
 @section('breadcrumb')
-    {{ Breadcrumbs::render('{{modelNameLowerCase}}.show', $post) }}
+    {{ Breadcrumbs::render('{{modelNameLowerCase}}.show', ${{modelNameLowerCase}}) }}
 @stop
 @section('content')
     <div class="card">

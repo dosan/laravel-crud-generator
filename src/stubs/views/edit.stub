@@ -3,7 +3,7 @@
     $title  = ${{modelTitle}};
 @endphp
 @section('breadcrumb')
-    {{ Breadcrumbs::render('{{modelNameLowerCase}}.edit', $post) }}
+    {{ Breadcrumbs::render('{{modelNameLowerCase}}.edit', ${{modelNameLowerCase}}) }}
 @stop
 
 @section('content')
