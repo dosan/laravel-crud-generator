@@ -1,28 +1,23 @@
 @extends('{{layout}}')
-
-@section('template_title')
-    {{ ${{modelNameLowerCase}}->name ?? 'Show {{modelTitle}}' }}
-@endsection
-
+@php
+    $title  = ${{modelNameLowerCase}}->name ?? 'Show {{modelTitle}}'
+@endphp
+@section('breadcrumb')
+    {{ Breadcrumbs::render('{{modelNameLowerCase}}.show', $post) }}
+@stop
 @section('content')
-    <section class="content container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card">
-                    <div class="card-header">
-                        <div class="float-left">
-                            <span class="card-title">Show {{modelTitle}}</span>
-                        </div>
-                        <div class="float-right">
-                            <a class="btn btn-primary" href="{{ route('{{modelRoute}}.index') }}"> Back</a>
-                        </div>
-                    </div>
-
-                    <div class="card-body">
-                        {{viewRows}}
-                    </div>
-                </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="float-left">
+                <span class="card-title">Show {{modelTitle}}</span>
+            </div>
+            <div class="float-right">
+                <a class="btn btn-primary" href="{{ route('{{modelNameLowerCase}}.index') }}"> Back</a>
             </div>
         </div>
-    </section>
+
+        <div class="card-body">
+            {{viewRows}}
+        </div>
+    </div>
 @endsection
