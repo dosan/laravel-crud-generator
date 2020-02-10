@@ -1,10 +1,10 @@
 @extends('{{layout}}')
 
 @php
-    $title  = 'Create: '. ${{modelTitle}};
+    $title  = 'Create: {{modelTitle}}';
 @endphp
 @section('breadcrumb')
-    {{ Breadcrumbs::render('{{modelNameLowerCase}}.edit', ${{modelNameLowerCase}}) }}
+    {{ Breadcrumbs::render('{{modelNameLowerCase}}.create') }}
 @stop
 
 @section('content')

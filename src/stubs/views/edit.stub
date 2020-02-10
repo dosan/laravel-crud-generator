@@ -1,6 +1,6 @@
 @extends('{{layout}}')
 @php
-    $title  = ${{modelTitle}};
+    $title  = __('{{modelTitle}}');
 @endphp
 @section('breadcrumb')
     {{ Breadcrumbs::render('{{modelNameLowerCase}}.edit', ${{modelNameLowerCase}}) }}

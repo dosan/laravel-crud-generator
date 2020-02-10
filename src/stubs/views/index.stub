@@ -1,9 +1,9 @@
 @extends('{{layout}}')
 @php
-    $title  = ${{modelTitle}};
+    $title  = __('{{modelTitle}}');
 @endphp
 @section('breadcrumb')
-    {{ Breadcrumbs::render('{{modelNameLowerCase}}.index', ${{modelNameLowerCase}}) }}
+    {{ Breadcrumbs::render('{{modelNameLowerCase}}.index') }}
 @stop
 
 @section('content')
@@ -16,7 +16,7 @@
                 </span>
 
                  <div class="float-right">
-                    <a href="{{ route('{{modelRoute}}.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
+                    <a href="{{ route('{{modelNameLowerCase}}.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
                       {{ __('Create New') }}
                     </a>
                   </div>
