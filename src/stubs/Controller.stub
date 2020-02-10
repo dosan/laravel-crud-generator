@@ -47,7 +47,7 @@ class {{modelName}}Controller extends Controller
 
         ${{modelNameLowerCase}} = {{modelName}}::create($request->all());
 
-        return redirect()->route('{{modelRoute}}.index')
+        return redirect()->route('{{modelNameLowerCase}}.index')
             ->with('success', '{{modelName}} created successfully.');
     }
 
@@ -90,7 +90,7 @@ class {{modelName}}Controller extends Controller
 
         ${{modelNameLowerCase}}->update($request->all());
 
-        return redirect()->route('{{modelRoute}}.index')
+        return redirect()->route('{{modelNameLowerCase}}.index')
             ->with('success', '{{modelName}} updated successfully');
     }
 
@@ -103,7 +103,7 @@ class {{modelName}}Controller extends Controller
     {
         ${{modelNameLowerCase}} = {{modelName}}::find($id)->delete();
 
-        return redirect()->route('{{modelRoute}}.index')
+        return redirect()->route('{{modelNameLowerCase}}.index')
             ->with('success', '{{modelName}} deleted successfully');
     }
 }
